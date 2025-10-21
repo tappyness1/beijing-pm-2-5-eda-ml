@@ -1,6 +1,6 @@
 # Forecasting Air Quality in Beijing: Insights from Data Science
 
-![Beijing Air Pollution](images/beijing-air-pollution.jpg)
+![alt text](images/cover-image.png)
 
 ## Questions of Interest
 
