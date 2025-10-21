@@ -1,0 +1,32 @@
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - statsmodels
+  - tensorflow
+  - keras
+  - jupyter
+  - ipython
+  - pip:
+      - coreforecast
+      - statsforecast
+      - u8darts
+      - shap
+      - xgboost
+      - pyod
+      - holidays
+      - fugue
+      - numba
+      - narwhals
+      - fs
+      - pydot
+      - cloudpickle
+      - plotly
+      - ucimlrepo
