@@ -5,14 +5,14 @@
 ## Questions of Interest
 
 1. **How do meteorological factors influence PM2.5 air pollution levels in Beijing?**
-2. **Can we accurately forecast future PM2.5 levels using historical data and machine learning?**
+2. **Can we have a model to forecast the PM2.5 levels**
 3. **How does feature engineering (such as lagged and rolling features) impact the accuracy of PM2.5 forecasts?**
 
 ---
 
 ## Findings
 
-### 1. Meteorological Factors and PM2.5
+### 1. How do meteorological factors influence PM2.5 air pollution levels in Beijing?
 
 - **PM2.5 levels** show strong seasonality, with higher concentrations during colder months.
 - **Temperature and Dew Point** are strongly positively correlated, while **Pressure** is strongly negatively correlated with both.
@@ -35,7 +35,7 @@
 
 ---
 
-### 2. Forecasting PM2.5 Levels
+### 2. Can we have a model to forecast the PM2.5 levels
 
 - A Random Forest model was trained using lagged features and rolling statistics.
 - **Train MSE:** ~370
@@ -52,6 +52,12 @@
 | 4    |   392.41  |  6917.86 |
 | 5    |   409.99  |  5499.66 |
 
+### 3. How does feature engineering (such as lagged and rolling features) impact the accuracy of PM2.5 forecasts?
+
+- Adding lagged and rolling features improved the model's ability to capture temporal dependencies in PM2.5 levels.
+- Feature engineering helped reduce overfitting and provided more stable predictions across different time periods.
+- However, even with engineered features, the model still struggled with sudden spikes and extreme pollution events, suggesting the need for further enhancements or additional data sources.
+
 ### Actual vs Forecast
 ![alt text](images/image-3.png)
 
@@ -59,6 +65,7 @@
 ### Forecast - 1 week in Advance
 ![alt text](images/image-4.png)
 ---
+
 
 ## Conclusion
 
